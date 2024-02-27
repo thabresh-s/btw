@@ -51,13 +51,13 @@ services:
             CORS_DOMAINS: "http://localhost:9000"
             COMPANION_CLIENT_ORIGINS: "http://localhost:9000"
             COMPANION_AWS_ACL: "public-read"
-            SECRET: CHANGE THIS AND SET YOUR SECRET
+            SECRET: "Jeen@th2010"
             S3_ENDPOINT:
             S3_BUCKET:
             S3_KEY:
             S3_SECRET:
-            ADMIN_EMAIL:
-            ADMIN_SLUG:
+            ADMIN_EMAIL: "thabaresh.syed@gmail.com"
+            ADMIN_SLUG: "Jeen@th2010"
         links:
             - redis
     writer:
@@ -93,7 +93,7 @@ services:
             REACT_APP_TASKS_PUBLIC_URL: "http://localhost:9210"
             REACT_APP_UPPY_COMPANION_URL: "http://localhost:9210/companion"
             REACT_APP_S3_ENDPOINT:
-            SECRET: CHANGE THIS AND SET YOUR SECRET
+            SECRET: "Jeen@th2010"
     publisher:
         platform: linux/amd64
         container_name: publisher
@@ -128,8 +128,8 @@ services:
             HTTPS_DOMAIN: 0
             NODE_ENV: development
             SECRET_KEY: CHANGE THIS AND SET YOUR SECRET
-            ADMIN_EMAIL:
-            ADMIN_SLUG:
+            ADMIN_EMAIL: "thabaresh.syed@gmail.com"
+            ADMIN_SLUG: "Jeen@th2010"
     redis:
         # platform: linux/amd64
         image: "redisfab/redis:6.2.6-arm64v8-bionic"
